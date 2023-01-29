@@ -1,14 +1,24 @@
 ---
+import Simple from "./sections/Simple.astro";
+
+const skillsBoxText = "PHP, Mysql, JavaScript, CSS, HTML, Apache, Nginx, Administrador de Servers, Cloud Server DigitalOcean"
+const profileBoxText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos tempore reiciendis nam exercitationem quia, perferendis modi ducimus consequatur accusamus nesciunt expedita asperiores qui, eveniet consectetur, dolor dolore iusto architecto."
 ---
 
 <div class="middleAlignComponent">
     <section class="sections blackText">
-        <h2>Perfil</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempora inventore reiciendis, aliquid atque harum, quisquam vero quam reprehenderit voluptas corrupti ex officia ad explicabo eligendi, velit veritatis amet quo.</p>
+        <Simple title="Perfil" boxText={profileBoxText}/>
+        <Simple title="Perfil" boxText={profileBoxText}/>
+        <Simple title="Perfil" boxText={profileBoxText}/>
+        <Simple title="Perfil" boxText={profileBoxText}/>
+        
     </section>
     <section class="sections whiteText">
-        <h2>Habilidades</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempora inventore reiciendis, aliquid atque harum, quisquam vero quam reprehenderit voluptas corrupti ex officia ad explicabo eligendi, velit veritatis amet quo.</p>
+        <Simple title="Habilidades" boxText={skillsBoxText}/>
+        <Simple title="Perfil" boxText={profileBoxText}/>
+        <Simple title="Perfil" boxText={profileBoxText}/>
+        <Simple title="Perfil" boxText={profileBoxText}/>
+        <Simple title="Perfil" boxText={profileBoxText}/>
     </section>
 </div>
 

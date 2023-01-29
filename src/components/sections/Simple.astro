@@ -1,0 +1,10 @@
+---
+export interface Prips {
+    title: String,
+    boxText: String
+}
+
+const { title, boxText } = Astro.props;
+---
+<h2>{title}</h2>
+<p>{boxText}</p>
