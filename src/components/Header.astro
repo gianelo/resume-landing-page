@@ -1,6 +1,6 @@
 ---
 ---
-<section class="headerCard">
+<div class="middleAlignComponent">
     <div class="HeaderTitleCard blackText">
         <span class="nameHeaderTitleCard">Gian Eloin</span> <br>
         <span class="subtitleHeaderCard">Backend Developer</span>
@@ -10,36 +10,23 @@
     <div class="HeaderTitleCard whiteText">
         <span class="nameHeaderTitleCard">Barboza Ruiz</span>
     </div>
-</section>
+</div>
 
 <style>
-    section {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-        font-family: system-ui;
-        padding-top: 100px;
-    }
-
+   
     .avatarHeader {
-        width: 100px;
+        width: 200px;
         border-radius: 50%;
     }
 
-    .whiteText {
-        color: #fff;
-        text-align: left;
-    }
-
-    .blackText {
-        color: #000;
-        text-align: right;
+    .avatarHeader:hover {
+        width: 250px;
+        transition: .4s ease all;
     }
 
     .HeaderTitleCard {
         width: 40%;
+        font-weight: 600;
     }
 
     .nameHeaderTitleCard {
