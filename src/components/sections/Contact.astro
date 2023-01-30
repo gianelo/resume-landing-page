@@ -1,0 +1,12 @@
+---
+import ContactItem from "./ContactItem.astro";
+import phoneIcon from '../assets/image/phone.svg'
+import emailIcon from '../assets/image/email.svg'
+import linkedInIcon from '../assets/image/linkedin.svg'
+---
+<section class="childSection">
+    <h2>Contacto</h2>
+    <ContactItem title="gianbarboza11@gmail.com" icon={emailIcon} link="mailto:gianbarboza11@gmail.com"/>
+    <ContactItem title="+57 304 358 13 65" icon={phoneIcon} link="https://wa.link/do2ol0"/>
+    <ContactItem title="LinkedIn" icon={linkedInIcon} link="https://www.linkedin.com/in/gian-eloin-barboza-ruiz-13a08750/"/>
+</section>

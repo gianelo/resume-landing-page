@@ -1,17 +1,17 @@
 ---
+import Contact from "./sections/Contact.astro";
+import ContactItem from "./sections/ContactItem.astro";
 import Simple from "./sections/Simple.astro";
 
-const skillsBoxText = "PHP, Mysql, JavaScript, CSS, HTML, Apache, Nginx, Administrador de Servers, Cloud Server DigitalOcean"
-const profileBoxText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos tempore reiciendis nam exercitationem quia, perferendis modi ducimus consequatur accusamus nesciunt expedita asperiores qui, eveniet consectetur, dolor dolore iusto architecto."
+const profileBoxText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus vero nulla illum laboriosam tempore, repellendus libero a nesciunt laudantium iure cumque ratione ipsum ut maiores quae vel at voluptatibus."
+const skillsBoxText = "PHP, Mysql, JavaScript, CSS, HTML, Apache, Nginx, Administrador de Servers, Cloud Server DigitalOcean, Astro (Learning), React (Learning), Node.js (Learning), Express.js (Learning)"
 ---
 
 <div class="middleAlignComponent">
     <section class="sections blackText">
         <Simple title="Perfil" boxText={profileBoxText}/>
-        <Simple title="Perfil" boxText={profileBoxText}/>
-        <Simple title="Perfil" boxText={profileBoxText}/>
-        <Simple title="Perfil" boxText={profileBoxText}/>
-        
+        <Contact/>
+        <Simple title="Habilidades" boxText={skillsBoxText}/>         
     </section>
     <section class="sections whiteText">
         <Simple title="Habilidades" boxText={skillsBoxText}/>

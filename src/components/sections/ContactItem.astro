@@ -1,0 +1,39 @@
+---
+export interface Props {
+    title:string,
+    icon: string,
+    link:string
+}
+
+const {title, icon, link} = Astro.props;
+
+---
+<div>
+    <a class="blackText" href={link} target="_blank">
+        <h3>{title}</h3>
+        <img src={icon} alt="icon">
+    </a>
+</div>
+<style>
+    a {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: flex-end;
+        text-decoration: none;
+        cursor: pointer;
+        
+    }
+
+    a > img {
+        width: 25px;
+        transition: .3s ease all;
+    }
+
+    a > img:hover {
+        width: 30px;
+        transition: .3s ease all;
+    }
+
+
+</style>
